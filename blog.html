@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="WAKA Ltd - Real Estate Solutions in Zanzibar">
+    <meta name="keywords" content="real estate, property, zanzibar, waka, investment">
+    <meta name="robots" content="index, follow">
+    <!-- for open graph social media -->
+    <meta property="og:title" content="WAKA Ltd - Real Estate Solutions">
+    <meta property="og:description" content="WAKA Ltd - Real Estate Solutions in Zanzibar">
+    <!-- for twitter sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WAKA Ltd - Real Estate Solutions">
+    <meta name="twitter:description" content="WAKA Ltd - Real Estate Solutions in Zanzibar">
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/waka (1).png" type="image/png">
+    <!-- title -->
+    <title>WAKA Ltd - Real Estate Solutions in Zanzibar</title>
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- icon font from flaticon -->
+    <link rel="stylesheet" href="assets/fonts/flaticon_bokinn.css">
+    <!-- all plugin css -->
+    <link rel="stylesheet" href="assets/css/plugins.min.css">
+    <!-- main style custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Page-specific overrides */
+        :root { --brand-color: #F0161E; }
+
+        /* Filled buttons (e.g., Book Now) */
+        .theme-btn.btn-style.fill,
+        .theme-btn.fill {
+            background-color: var(--brand-color) !important;
+            border-color: var(--brand-color) !important;
+            color: #fff !important;
+        }
+
+        /* Subscribe button in footer */
+        .footer__newsletter button[type="submit"] {
+            background-color: var(--brand-color) !important;
+            border-color: var(--brand-color) !important;
+            color: #fff !important;
+        }
+
+        /* Back to top button */
+        .rts__back__top {
+            background-color: var(--brand-color) !important;
+            border-color: var(--brand-color) !important;
+        }
+        .rts__back__top:hover {
+            background-color: #d4141a !important;
+            border-color: #d4141a !important;
+        }
+    </style>
+</head>
+<style>
+    /* Chatbot styles (match index.html) */
+    .chatbot-launcher { position: fixed; right: 20px; bottom: 20px; width: 56px; height: 56px; border-radius: 50%; background: var(--brand-color, #F0161E); color: #fff; border: 0; display: grid; place-items: center; box-shadow: 0 8px 24px rgba(0,0,0,.18); z-index: 9999; cursor: pointer; }
+    .chatbot-panel { position: fixed; right: 20px; bottom: 90px; width: 360px; max-width: calc(100vw - 40px); height: 480px; background: #fff; border-radius: 14px; box-shadow: 0 12px 32px rgba(0,0,0,.2); overflow: hidden; display: none; z-index: 9999; }
+    .chatbot-panel.open { display: block; }
+    .chatbot-header { background: var(--brand-color, #F0161E); color: #fff; padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; }
+    .chatbot-header h6 { margin: 0; font-size: 16px; }
+    .chatbot-close { background: transparent; color: #fff; border: 0; font-size: 20px; line-height: 1; cursor: pointer; }
+    .chatbot-messages { height: 360px; overflow-y: auto; padding: 14px; background: #fafafa; }
+    .msg { margin: 8px 0; display: flex; gap: 8px; }
+    .msg.user { justify-content: flex-end; }
+    .bubble { max-width: 75%; padding: 10px 12px; border-radius: 12px; background: #eef1f6; color: #1a1a1a; font-size: 14px; }
+    .msg.user .bubble { background: #e9f3ff; }
+    .msg.bot .bubble { background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.06); }
+    .chatbot-form { display: flex; gap: 8px; padding: 10px; border-top: 1px solid #eee; }
+    .chatbot-input { flex: 1; border: 1px solid #e3e3e3; border-radius: 10px; padding: 10px 12px; font-size: 14px; }
+    .chatbot-send { background: var(--brand-color, #F0161E); color: #fff; border: 0; padding: 0 16px; border-radius: 10px; cursor: pointer; }
+</style>
+
+<body>
+    <!-- header area -->
+    <div class="header__top">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-6 col-md-6">
+                    <div class="social__links">
+                            <a class="link__item gap-10" href="tel:+255713508343"><i class="flaticon-phone-flip"></i> +255 713 508 343</a>
+                            <a class="link__item gap-10" href="mailto:info@waka.co.tz"><i class="flaticon-envelope"></i> info@waka.co.tz</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="location">
+                            <a class="link__item gap-10" href="#"><i class="flaticon-marker"></i> Kiembe Samaki, Airport Area, Zanzibar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="main__header header__function">
+        <div class="container">
+            <div class="row">
+                <div class="main__header__wrapper">
+                    <div class="main__nav">
+                        <div class="navigation d-none d-lg-block">
+                            <nav class="navigation__menu" id="main__menu">
+                                <ul class="list-unstyled">
+                                    <li class="navigation__menu--item">
+                                        <a href="index.html" class="navigation__menu--item__link">Home</a>
+                                    </li>
+                                    <li class="navigation__menu--item">
+                                        <a href="about.html" class="navigation__menu--item__link">About</a>
+                                    </li>
+                                    <li class="navigation__menu--item">
+                                        <a href="service.html" class="navigation__menu--item__link">Service</a>
+                                    </li>
+                                    <!--
+                                    <li class="navigation__menu--item has-child has-arrow">
+                                        <a href="#" class="navigation__menu--item__link">Rooms</a>
+                                        <ul class="submenu sub__style" role="menu">
+                                            <li role="menuitem" class="has-child has-arrow">
+                                                <a href="#">Room Style</a>
+                                                <ul class="sub__style" role="menu">
+                                                    <li role="menuitem"><a href="room-one.html">Room One</a></li>
+                                                    <li role="menuitem"><a href="room-two.html">Room Two</a></li>
+                                                    <li role="menuitem"><a href="room-three.html">Room Three</a></li>
+                                                    <li role="menuitem"><a href="room-four.html">Room Four</a></li>
+                                                </ul>
+                                            </li>
+                                            <li role="menuitem" class="has-child has-arrow">
+                                                <a href="#">Room Details</a>
+                                                <ul class="sub__style" role="menu">
+                                                    <li role="menuitem"><a href="room-details-1.html">Room Details 1</a></li>
+                                                    <li role="menuitem"><a href="room-details-2.html">Room Details 2</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    -->
+                                    <li class="navigation__menu--item has-child has-arrow">
+                                        <a href="#" class="navigation__menu--item__link">Blog</a>
+                                        <ul class="submenu sub__style" role="menu">
+                                            <li role="menuitem"><a href="blog.html">Blog</a></li>
+                                            <!-- <li role="menuitem"><a href="blog-details.html">Blog Details</a></li> -->
+                                        </ul>
+                                    </li>
+                                    <li class="navigation__menu--item">
+                                        <a href="contact.html" class="navigation__menu--item__link">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+                    <div class="main__logo">
+                        <a href="index.html"><img class="logo__class" src="assets/images/waka (1).png" alt="waka" height="108"></a>
+                    </div>
+                    <div class="main__right">
+                        <!-- <a href="#" class="theme-btn btn-style sm-btn border d-none d-lg-block" aria-label="Login Button" data-bs-toggle="modal" data-bs-target="#loginModal"><span>Sign In</span></a> -->
+                        <!-- <a href="#" class="theme-btn btn-style sm-btn border d-none d-lg-block" aria-label="Sign Up Button" data-bs-toggle="modal" data-bs-target="#signupModal"><span>Sign Up</span></a> -->
+                        <a href="room-details-1.html" class="theme-btn btn-style sm-btn fill"><span>Book Now</span></a>
+                        <button class="theme-btn btn-style sm-btn fill menu__btn d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <span><img src="assets/images/icon/menu-icon.svg" alt=""></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header area end -->
+
+    <!-- page header -->
+    <div class="rts__section page__hero__height page__hero__bg" style="background-image: url(assets/images/pages/header__bg.webp);">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-12">
+                    <div class="page__hero__content">
+                        <h1 class="wow fadeInUp">Our Blog</h1>
+                        <p class="wow fadeInUp font-sm">Discover The blog where luxury, comfort, and adventure come together.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page header end -->
+
+    <!-- blog -->
+    <div class="rts__section section__padding">
+        <div class="container">
+            <div class="row g-30 sticky-wrap">
+                <div class="col-lg-7 col-xl-8">
+                    <div class="blog__list__item ">
+                        <!-- single blog item -->
+                        <div class="single__blog">
+                            <div class="single__blog__thumb">
+                                <a href="blog-details.html">
+                                    <img src="assets/images/pages/blog/1.webp" height="490" width="760" alt="">
+                                </a>
+                            </div>
+                            <div class="single__blog__meta">
+                                <a href="#" class="category">Zanzibar Travel</a>
+                                <a href="blog-details.html" class="h5">Things to Do in Zanzibar: An Adventure Lover’s Guide</a>
+                                <p>Zanzibar isn’t just about beautiful beaches—it’s packed with exciting activities for every type of traveler. From water sports to cultural experiences, here are the best things to do in Zanzibar:</p>
+                                <ol>
+                                    <li><strong>Snorkeling &amp; Diving</strong><br>Explore Zanzibar’s vibrant marine life at Mnemba Atoll, Leven Bank, or Chumbe Island Coral Park. With crystal-clear waters and diverse coral reefs, it’s a paradise for underwater enthusiasts.</li>
+                                    <li><strong>Sunset Dhow Cruise</strong><br>Hop on a traditional wooden dhow and sail along the coast as the sun sets over the Indian Ocean. Many tours include snorkeling stops and a seafood BBQ on the beach.</li>
+                                    <li><strong>Spice Tour</strong><br>Discover why Zanzibar is called the “Spice Island” with a guided tour of a spice farm. Learn about cloves, vanilla, cardamom, and more while tasting fresh tropical fruits.</li>
+                                    <li><strong>Swim with Dolphins</strong><br>Take a boat trip from Kizimkazi and swim with wild dolphins in their natural habitat. Early morning tours offer the best chance to see them up close.</li>
+                                    <li><strong>Explore Stone Town’s History</strong><br>Wander through Stone Town’s labyrinthine streets, visit the Old Slave Market, the Sultan’s Palace, and the Arab Fort. Don’t forget to bargain at the local markets for souvenirs.</li>
+                                    <li><strong>Kitesurfing in Paje</strong><br>With steady winds and shallow waters, Paje Beach is one of the best kitesurfing spots in the world. Beginners can take lessons, while pros can enjoy the ideal conditions.</li>
+                                    <li><strong>Visit Prison Island</strong><br>Meet the giant tortoises and snorkel in the clear waters around Changuu Island. It’s a great half-day trip from Stone Town.</li>
+                                    <li><strong>Jozani Forest Walk</strong><br>Spot the endangered red colobus monkeys in Jozani Forest, Zanzibar’s only national park. The mangrove boardwalk is also a serene nature experience.</li>
+                                    <li><strong>Try Zanzibari Cuisine</strong><br>Indulge in local dishes like urojo (Zanzibar mix), pweza wa nazi (octopus in coconut curry), and pili pili sauce. For a unique experience, dine at The Rock Restaurant.</li>
+                                    <li><strong>Relax on the Best Beaches</strong><br>From Nungwi to Kendwa, Paje, and Matemwe, Zanzibar’s beaches are perfect for sunbathing, swimming, or simply unwinding with a coconut in hand.</li>
+                                    <li><strong>Go on a Safari Blue Tour</strong><br>This full-day boat excursion includes snorkeling, a seafood lunch, and sailing on a traditional dhow. It’s one of the most popular activities in Zanzibar.</li>
+                                    <li><strong>Visit a Local Village</strong><br>Experience authentic Zanzibari culture by visiting a fishing village like Nungwi or Matemwe. Learn about daily life, traditional boat-building, and local crafts.</li>
+                                    <li><strong>Full Moon Party at Kendwa Rocks</strong><br>If you’re visiting during a full moon, don’t miss the legendary Full Moon Party at Kendwa Rocks, featuring live music, bonfires, and dancing under the stars.</li>
+                                    <li><strong>Stand-Up Paddleboarding (SUP)</strong><br>Glide over the calm waters of Paje or Nungwi on a paddleboard for a fun and relaxing way to enjoy the ocean.</li>
+                                    <li><strong>Deep-Sea Fishing</strong><br>For adventure seekers, Zanzibar offers excellent deep-sea fishing opportunities. Catch marlin, tuna, or sailfish on a chartered fishing trip.</li>
+                                </ol>
+                                <p>Whether you’re an adrenaline junkie, a culture lover, or just looking to unwind, Zanzibar offers endless possibilities. Pack your bags and get ready for an unforgettable island adventure!</p>
+                                
+                            </div>
+                        </div>
+                        <!-- single blog item end -->
+                        <!-- single blog item -->
+                        <div class="single__blog">
+                            <div class="single__blog__thumb">
+                                <a href="blog-details.html">
+                                    <img src="assets/images/pages/blog/2.webp" height="490" width="760" alt="">
+                                </a>
+                            </div>
+                            <div class="single__blog__meta">
+                                <a href="#" class="category">Zanzibar Travel</a>
+                                <a href="blog-details.html" class="h5">Places to Visit in Zanzibar: A Tropical Paradise</a>
+                                <p>Zanzibar, an archipelago off the coast of Tanzania, is a dream destination with its white sandy beaches, turquoise waters, and rich cultural heritage. Whether you're seeking relaxation, adventure, or history, Zanzibar has something for everyone. Here are some must-visit places:</p>
+                                <ol>
+                                    <li><strong>Stone Town</strong><br>A UNESCO World Heritage Site, Stone Town is the cultural heart of Zanzibar. Wander through its narrow alleys, admire the Arab and Persian architecture, and visit landmarks like the House of Wonders, Freddie Mercury’s House, and the Old Fort. Don’t miss the vibrant Forodhani Gardens Night Market for delicious street food.</li>
+                                    <li><strong>Nungwi &amp; Kendwa Beaches</strong><br>Located in the north, Nungwi and Kendwa boast some of the island’s most stunning beaches. Perfect for swimming, sunbathing, and watching breathtaking sunsets.</li>
+                                    <li><strong>Prison Island (Changuu Island)</strong><br>Just a short boat ride from Stone Town, Prison Island is famous for its giant Aldabra tortoises. Enjoy snorkeling in the surrounding coral reefs or relax on serene beaches.</li>
+                                    <li><strong>Jozani Forest</strong><br>Home to the rare red colobus monkeys, Jozani Forest is Zanzibar’s only national park. Boardwalks through the forest and mangroves offer great wildlife viewing.</li>
+                                    <li><strong>Spice Farms</strong><br>Zanzibar is the “Spice Island.” Visit a spice farm to see cloves, vanilla, cinnamon, and nutmeg, and taste fresh tropical fruits.</li>
+                                    <li><strong>The Rock Restaurant</strong><br>Iconic oceanfront dining perched on a small outcrop near Michamvi Pingwe Beach. Enjoy fresh seafood with stunning views.</li>
+                                    <li><strong>Mnemba Atoll</strong><br>A top snorkeling and diving spot with colorful reefs, dolphins, and tropical fish in a protected marine area.</li>
+                                    <li><strong>Paje Beach</strong><br>A hotspot for kitesurfing and water sports with shallow turquoise waters and a lively beach scene.</li>
+                                    <li><strong>Kizimkazi Village</strong><br>Famous for dolphin tours where you can swim with wild dolphins, plus a 12th-century Persian mosque.</li>
+                                    <li><strong>Matemwe Beach</strong><br>Secluded stretches of sand and traditional fishing culture; a great base for trips to Mnemba Island.</li>
+                                </ol>
+                                <p>Zanzibar is a paradise waiting to be explored. Whether you're diving into its rich history, relaxing on pristine beaches, or indulging in spice-infused cuisine, this island will leave you enchanted.</p>
+                            </div>
+                        </div>
+                        <!-- single blog item end -->
+
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-5 sticky-item">
+                    <div class="blog__sidebar__section  ">
+                        <h6 class="mb-3">Search</h6>
+                        <form action="#" class="search__form">
+                            <input type="text" name="search" placeholder="Search">
+                            <i class="flaticon-search-1"></i>
+                        </form>
+                        <h6 class="mb-4">category</h6>
+                        <div class="search__item__list">
+                            <div class="d-flex align-items-center justify-content-between list">
+                                <div class="d-flex gap-2 align-items-center checkbox is__small">
+                                    <input type="checkbox" name="web" id="web">
+                                    <label for="web">Adventure Stays</label>
+                                </div>
+                                <span>(130)</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between list">
+                                <div class="d-flex gap-2 align-items-center checkbox  is__small">
+                                    <input type="checkbox" name="design" id="design">
+                                    <label for="design">Wellness & Relaxation</label>
+                                </div>
+                                <span>(80)</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between list">
+                                <div class="d-flex gap-2 align-items-center checkbox is__small">
+                                    <input type="checkbox" name="ux" id="ux">
+                                    <label for="ux">Cultural Stays</label>
+                                </div>
+                                <span>(45)</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between list">
+                                <div class="d-flex gap-2 align-items-center checkbox is__small">
+                                    <input type="checkbox" name="dev" id="dev">
+                                    <label for="dev">Historic Hotels</label>
+                                </div>
+                                <span>(100)</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between list">
+                                <div class="d-flex gap-2 align-items-center checkbox is__small">
+                                    <input type="checkbox" name="business" id="business">
+                                    <label for="business">Pet-Friendly Hotels</label>
+                                </div>
+                                <span>(80)</span>
+                            </div>
+                        </div>
+                        <h6 class="mb-4">Latest Post</h6>
+                        <div class="latest__post mb-30">
+
+                            <div class="single__post">
+                                <div class="single__post__thumb">
+                                    <a href="blog-details.html">
+                                        <img src="assets/images/pages/blog/r-1.webp" height="106" width="110" alt="">
+                                    </a>
+                                </div>
+                                <div class="single__post__meta">
+                                    <a href="#" class="font-sm">Top 10 Reasons Guests Love Staying at Bokinn</a>
+                                    <span><img src="assets/images/icon/clock.svg" alt=""> 10 Min Read</span>
+                                </div>
+                            </div>
+                            <div class="single__post">
+                                <div class="single__post__thumb">
+                                    <a href="blog-details.html">
+                                        <img src="assets/images/pages/blog/r-2.webp" height="106" width="110" alt="">
+                                    </a>
+                                </div>
+                                <div class="single__post__meta">
+                                    <a href="#" class="font-sm">Top 10 Reasons Guests Love Staying at Bokinn</a>
+                                    <span><img src="assets/images/icon/clock.svg" alt=""> 10 Min Read</span>
+                                </div>
+                            </div>
+                            <div class="single__post">
+                                <div class="single__post__thumb">
+                                    <a href="blog-details.html">
+                                        <img src="assets/images/pages/blog/r-3.webp" height="106" width="110" alt="">
+                                    </a>
+                                </div>
+                                <div class="single__post__meta">
+                                    <a href="#" class="font-sm">Top 10 Reasons Guests Love Staying at Bokinn</a>
+                                    <span><img src="assets/images/icon/clock.svg" alt=""> 10 Min Read</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <h6 class="mb-4">Tags</h6>
+                        <div class="tag__list">
+                            <div class="tags__list">
+                                <a href="#">Hotel Stay</a>
+                                <a href="#">Travel Blog</a>
+                                <a href="#">Guest Experience</a>
+                                <a href="#"> Hotel Guide</a>
+                                <a href="#">Hotel Review</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- blog end -->
+
+    <!-- footer style one -->
+
+
+    <div class="modal similar__modal fade " id="loginModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="max-content similar__form form__padding">
+                    <div class="d-flex mb-3 align-items-center justify-content-between">
+                        <h6 class="mb-0">Login To Moonlit</h6>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                        </button>
+                    </div>
+                    <form action="candidate-dashboard.html" method="post" class="d-flex flex-column gap-3">
+                        <div class="form-group">
+                            <label for="email-popup" class="text-dark mb-3">Your Email</label>
+                            <div class="position-relative">
+                                <input type="email" name="email-popup" id="email-popup" placeholder="Enter your email" required>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="text-dark mb-3">Password</label>
+                            <div class="position-relative">
+                                <input type="password" name="password" id="password" placeholder="Enter your password" required>
+
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap justify-content-between align-items-center ">
+                            <div class="form-check d-flex align-items-center gap-2">
+                                <input class="form-check-input mt-0" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label mb-0" for="flexCheckDefault">
+                                    Remember me
+                                </label>
+                            </div>
+                            <a href="#" class="forgot__password text-para" data-bs-toggle="modal" data-bs-target="#forgotModal">Forgot Password?</a>
+                        </div>
+                        <div class="form-group my-3">
+                            <button class="theme-btn btn-style sm-btn fill w-100"><span>Login</span></button>
+                        </div>
+                    </form>
+                    <div class="d-block has__line text-center">
+                        <p>Or</p>
+                    </div>
+                    <div class="d-flex gap-4 flex-wrap justify-content-center mt-20 mb-20">
+                        <div class="is__social google">
+                            <button class="theme-btn btn-style sm-btn"><span>Continue with Google</span></button>
+                        </div>
+                        <div class="is__social facebook">
+                            <button class="theme-btn btn-style sm-btn"><span>Continue with Facebook</span></button>
+                        </div>
+                    </div>
+                    <span class="d-block text-center ">Don`t have an account? <a href="#" data-bs-target="#signupModal" data-bs-toggle="modal" class="text-primary">Sign Up</a> </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- signup form -->
+    <div class="modal similar__modal fade " id="signupModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="max-content similar__form form__padding">
+                    <div class="d-flex mb-3 align-items-center justify-content-between">
+                        <h6 class="mb-0">Create A Free Account</h6>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                        </button>
+                    </div>
+
+                    <form action="#" class="d-flex flex-column gap-3">
+                        <div class="form-group">
+                            <label for="sname" class=" text-dark mb-3">Your Name</label>
+                            <div class="position-relative">
+                                <input type="text" name="sname" id="sname" placeholder="Candidate" required>
+                                <i class="fa-light fa-user icon"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signemail" class=" text-dark mb-3">Your Email</label>
+                            <div class="position-relative">
+                                <input type="email" name="signemail" id="signemail" placeholder="Enter your email" required>
+                                <i class="fa-sharp fa-light fa-envelope icon"></i>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="spassword" class=" text-dark mb-3">Password</label>
+                            <div class="position-relative">
+                                <input type="password" name="spassword" id="spassword" placeholder="Enter your password" required>
+                                <i class="fa-light fa-lock icon"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group my-3">
+                            <button class="theme-btn btn-style sm-btn fill w-100"><span>Register</span></button>
+                        </div>
+                    </form>
+                    <div class="d-block has__line text-center">
+                        <p>Or</p>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-center gap-4 mt-20 mb-20">
+                        <div class="is__social google">
+                            <button class="theme-btn btn-style sm-btn"><span>Continue with Google</span></button>
+                        </div>
+                        <div class="is__social facebook">
+                            <button class="theme-btn btn-style sm-btn"><span>Continue with Facebook</span></button>
+                        </div>
+                    </div>
+                    <span class="d-block text-center ">Have an account? <a href="#" data-bs-target="#loginModal" data-bs-toggle="modal" class="text-primary">Login</a> </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- forgot password form -->
+    <div class="modal similar__modal fade " id="forgotModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="max-content similar__form form__padding">
+                    <div class="d-flex mb-3 align-items-center justify-content-between">
+                        <h6 class="mb-0">Forgot Password</h6>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                        </button>
+                    </div>
+                    <form action="#" class="d-flex flex-column gap-3">
+                        <div class="form-group">
+                            <label for="fmail" class=" text-dark mb-3">Your Email</label>
+                            <div class="position-relative">
+                                <input type="email" name="email" id="fmail" placeholder="Enter your email" required>
+                                <i class="fa-sharp fa-light fa-envelope icon"></i>
+                            </div>
+                        </div>
+                        <div class="form-group my-3">
+                            <button class="theme-btn btn-style sm-btn fill w-100"><span>Reset Password</span></button>
+                        </div>
+                    </form>
+
+                    <span class="d-block text-center ">Remember Your Password? 
+                <a href="#" data-bs-target="#loginModal" data-bs-toggle="modal" class="text-primary">Login</a> </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- offcanvase menu -->
+    <div class="offcanvas offcanvas-start" id="offcanvasRight">
+        <div class="rts__btstrp__offcanvase">
+            <div class="offcanvase__wrapper">
+                <div class="left__side mobile__menu">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <div class="offcanvase__top">
+                        <div class="offcanvase__logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo/logo__two.svg" alt="logo">
+                            </a>
+                        </div>
+                        <p class="description">
+                            Welcome to Moonlit, where luxury meets comfort in the heart of canada. Since 1999, we have been dedicated to providing.
+                        </p>
+                    </div>
+                    <div class="offcanvase__mobile__menu">
+                        <div class="mobile__menu__active"></div>
+                    </div>
+                    <div class="offcanvase__bottom">
+                        <div class="offcanvase__address">
+
+                            <div class="item">
+                                <span class="h6">Phone</span>
+                                <a href="tel:+1234567890"><i class="flaticon-phone-flip"></i> +1234567890</a>
+                            </div>
+                            <div class="item">
+                                <span class="h6">Email</span>
+                                <a href="mailto:info@hostie.com"><i class="flaticon-envelope"></i>info@hostie.com</a>
+                            </div>
+                            <div class="item">
+                                <span class="h6">Address</span>
+                                <a href="#"><i class="flaticon-marker"></i> 280 Augusta Avenue, M5T 2L9 Toronto, Canada</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="right__side desktop__menu">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <div class="rts__desktop__menu">
+                        <nav class="desktop__menu offcanvas__menu">
+                            <ul class="list-unstyled">
+                                <li class="slide has__children">
+                                    <a class="slide__menu__item" href="#">Home
+                                        <span class="toggle"></span>
+                                    </a>
+                                    <ul class="slide__menu">
+                                        <li><a href="index.html">Luxury Hotel</a></li>
+                                        <li><a href="index-2.html">Luxe Vista Hotel</a></li>
+                                        <li><a href="index-3.html">Ocean Breeze Hotel</a></li>
+                                        <li><a href="index-4.html">Apartment Hotel</a></li>
+                                        <li><a href="index-5.html">Mountain Hotel</a></li>
+                                        <li><a href="index-6.html">City Hotel</a></li>
+                                        <li><a href="index-7.html">Beach Hotel</a></li>
+                                        <li><a href="index-dark.html">Hotel Dark</a></li>
+                                        <li><a href="index-video.html">Hotel Seaside</a></li>
+                                    </ul>
+                                </li>
+                                <li class="slide">
+                                    <a class="slide__menu__item" href="about.html">About us
+                                    </a>
+                                </li>
+                                <li class="slide has__children">
+                                    <a class="slide__menu__item" href="#">Rooms
+                                        <span class="toggle"></span>
+                                    </a>
+                                    <ul class="slide__menu">
+                                        <li><a href="room-one.html">Room One</a></li>
+                                        <li><a href="room-two.html">Room Two</a></li>
+                                        <li><a href="room-three.html">Room Three</a></li>
+                                        <li><a href="room-four.html">Room Four</a></li>
+                                        <li><a href="room-details-1.html">Room Details One</a></li>
+                                        <li><a href="room-details-2.html">Room Details Two</a></li>
+                                    </ul>
+                                </li>
+                                <li class="slide has__children">
+                                    <a class="slide__menu__item" href="#">Blog
+                                        <span class="toggle"></span>
+                                    </a>
+                                    <ul class="slide__menu">
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <!-- <li><a href="blog-details.html">Blog Details</a></li> -->
+                                    </ul>
+                                </li>
+                                <li class="slide has__children">
+                                    <a class="slide__menu__item" href="#">Pages
+                                        <span class="toggle"></span>
+                                    </a>
+                                    <ul class="slide__menu">
+                                        <li><a href="resturant.html">Resturant</a></li>
+                                        <li><a href="gallery.html">Gallery</a></li>
+                                        <li><a href="service.html">Service</a></li>
+                                        <li><a href="event.html">Event</a></li>
+                                        <li><a href="activities.html">Activities</a></li>
+                                    </ul>
+                                </li>
+                                <li class="slide has__children">
+                                    <a class="slide__menu__item" href="contact.html">Contact Us
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- offcanvase menu end -->
+    <footer class="rts__section rts__footer is__home__five footer__background has__shape">
+        <div class="container">
+            <div class="row">
+                <div class="footer__widget__wrapper">
+                    <div class="rts__widget">
+                        <a href="index.html"><img src="assets/images/waka (1).png" alt="footer logo" height="48"></a>
+                        <p class="font-sm max-290 mt-20">Each room features plush bedding, high-quality linens, and a selection of ensure a restful night's sleep.</p>
+                    </div>
+                    <div class="rts__widget">
+                        <span class="widget__title">Guest Services</span>
+                        <ul>
+                            <li><a href="#">24/7 Front Desk</a></li>
+                            <li><a href="#">Parking</a></li>
+                            <li><a href="#">Room Service</a></li>
+                            <li><a href="#">Free Wi-Fi</a></li>
+                            <li><a href="#">Concierge Service</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="rts__widget">
+                        <span class="widget__title">Contact Us</span>
+                        <ul>
+                            <li><a href="tel:+255713508343"><i class="flaticon-phone-flip"></i> +255 713 508 343</a></li>
+                            <li><a href="mailto:info@waka.co.tz"><i class="flaticon-envelope"></i>info@waka.co.tz</a></li>
+                            <li><a href="#"><i class="flaticon-marker"></i>Kiembe Samaki, Airport Area, Zanzibar</a></li>
+                        </ul>
+                    </div>
+                    <div class="rts__widget">
+                        <span class="widget__title">Join Our Newsletter</span>
+                        <div class="rts__form footer__newsletter">
+                            <form action="#" method="post">
+                                <input type="email" name="email" id="subscription" placeholder="Enter your mail" required="">
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright__text">
+            <div class="container">
+                <div class="row">
+                    <div class="copyright__wrapper">
+                        <p class="mb-0">Copyright © 2025 Waka Ltd. All rights reserved.</p>
+                        <div class="footer__social__link">
+                            <a href="https://www.youtube.com/channel/UCWHoteLq6Itn-GvUk0i_XrQ" class="link__item" target="_blank" rel="noopener">YouTube</a>
+                            <a href="https://www.instagram.com/wa.ka9333/" class="link__item" target="_blank" rel="noopener">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!-- Chatbot UI -->
+    <button type="button" class="chatbot-launcher" id="chatbot-launcher" aria-label="Open chat">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3C7.03 3 3 6.58 3 11c0 2.19 1.05 4.16 2.75 5.6L5 21l3.02-1.51C9.1 19.83 10.52 20 12 20c4.97 0 9-3.58 9-8s-4.03-9-9-9Z" stroke="#fff" stroke-width="1.5" fill="none"/>
+            <circle cx="9" cy="11" r="1.25" fill="#fff"/>
+            <circle cx="12" cy="11" r="1.25" fill="#fff"/>
+            <circle cx="15" cy="11" r="1.25" fill="#fff"/>
+        </svg>
+    </button>
+    <div class="chatbot-panel" id="chatbot-panel" role="dialog" aria-modal="true" aria-labelledby="chatbot-title">
+        <div class="chatbot-header">
+            <h6 id="chatbot-title">WAKA Assistant</h6>
+            <button class="chatbot-close" id="chatbot-close" aria-label="Close chat">×</button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="msg bot"><div class="bubble">Hi! I’m the WAKA Assistant. Ask me about our apartments, amenities, booking, or company info.</div></div>
+        </div>
+        <form class="chatbot-form" id="chatbot-form">
+            <input type="text" class="chatbot-input" id="chatbot-input" placeholder="Type your message..." required>
+            <button class="chatbot-send" type="submit">Send</button>
+        </form>
+    </div>
+    <!-- Chatbot UI end -->
+
+
+    <!-- THEME PRELOADER START -->
+    <div class="loader-wrapper">
+        <div class="loader">
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- THEME PRELOADER END -->
+
+
+    <!-- plugin js -->
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/gdpr.js"></script>
+    <!-- custom js -->
+    <script src="assets/js/main.js"></script>
+    <script>
+    (function(){
+        const launcher = document.getElementById('chatbot-launcher');
+        const panel = document.getElementById('chatbot-panel');
+        const closeBtn = document.getElementById('chatbot-close');
+        const form = document.getElementById('chatbot-form');
+        const input = document.getElementById('chatbot-input');
+        const messages = document.getElementById('chatbot-messages');
+
+        function appendMessage(role, text){
+            const m = document.createElement('div');
+            m.className = 'msg ' + role;
+            const b = document.createElement('div');
+            b.className = 'bubble';
+            b.textContent = text;
+            m.appendChild(b);
+            messages.appendChild(m);
+            messages.scrollTop = messages.scrollHeight;
+        }
+
+        launcher.addEventListener('click', ()=> panel.classList.toggle('open'));
+        closeBtn.addEventListener('click', ()=> panel.classList.remove('open'));
+
+        async function chat(query){
+            const systemPrompt = `You are WAKA Ltd's website assistant. Answer questions about WAKA's apartments near Zanzibar airport, amenities (daily housekeeping, high-speed Wi‑Fi & Cable TV, concierge, airport shuttle, 24/7 front desk, kitchenettes in select units, laundry, secure parking), About page, Services, Blog, and Contact info. Be concise and helpful.`;
+            try{
+                const res = await fetch('/api/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        messages: [
+                            { role: 'system', content: systemPrompt },
+                            { role: 'user', content: query }
+                        ]
+                    })
+                });
+                const data = await res.json();
+                const text = data.text || 'Sorry, I could not get a response right now.';
+                appendMessage('bot', text);
+            }catch(e){
+                appendMessage('bot', 'Network error. Please try again.');
+            }
+        }
+
+        form.addEventListener('submit', (e)=>{
+            e.preventDefault();
+            const q = input.value.trim();
+            if(!q) return;
+            appendMessage('user', q);
+            input.value = '';
+            chat(q);
+        });
+    })();
+    </script>
+</body>
+
+</html>
